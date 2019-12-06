@@ -1,24 +1,19 @@
 <template>
   <div id="app">
     <div class="head">
-      <div class="title">
+      <router-link class="title" tag="div" to="/">
         chenxin
-      </div>
+      </router-link>
     </div>
     <div class="main">
-      <upload-view></upload-view>
+      <router-view />
     </div>
   </div>
 </template>
 
 <script>
-import uploadView from "./uploadView";
-
 export default {
-  name: "app",
-  components: {
-    uploadView
-  }
+  name: "app"
 };
 </script>
 
@@ -39,6 +34,7 @@ html,
       margin-left: 2%;
       margin-right: 2%;
       color: #c60;
+      cursor: pointer;
     }
   }
   .main {

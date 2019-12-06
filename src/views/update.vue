@@ -172,7 +172,7 @@ export default {
 <style lang="less">
 .uploadView {
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   .tip {
     color: #909399;
   }
